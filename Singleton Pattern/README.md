@@ -26,7 +26,6 @@ class but it has a drawback that instance is created even though client applicat
     {
         private static readonly EagerInitializedSingleton instance = new EagerInitializedSingleton();
 
-        //private constructor to avoid client applications to use constructor
         private EagerInitializedSingleton() 
         {
             Console.WriteLine("Hello Singleton");
