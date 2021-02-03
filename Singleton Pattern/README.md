@@ -107,3 +107,8 @@ Explanation of the following code:
                }
            }
        }
+
+# Thread Safe Singleton using Double Check Locking
+
+Explanation of the following code:
+In the following code, the thread is locked on a shared object and checks whether an instance has been created or not with double checking.
