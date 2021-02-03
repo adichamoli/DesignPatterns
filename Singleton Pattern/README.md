@@ -23,11 +23,19 @@ The disadvantages of a Singleton Pattern are:
 * Unit testing is more difficult (because it introduces a global state into an application).
 * This pattern reduces the potential for parallelism within a program because to access the singleton in a multi-threaded system, an object must be serialized (by locking).
 
+# Singleton class vs. Static methods
+ 
+The following compares Singleton class vs. Static methods:
+1. A Static Class cannot be extended whereas a singleton class can be extended.
+2. A Static Class can still have instances (unwanted instances) whereas a singleton class prevents it.
+3. A Static Class cannot be initialized with a STATE (parameter), whereas a singleton class can be.
+4. A Static class is loaded automatically by the CLR when the program or namespace containing the class is loaded.
+
 # Types of Implemenatation
 
 1. Eager Initialization
-2. Static Block Initialization
-3. Lazy Initialization
+2. Thread Safe Singleton
+3. Thread Safe Singleton using Double-Check Locking
 4. Thread Safe Singleton
 5. Bill Pugh Singleton Implementation
 6. Using Reflection to destroy Singleton Pattern
@@ -41,26 +49,28 @@ class but it has a drawback that instance is created even though client applicat
 
     public sealed class EagerInitializedSingleton
     {
-        private static readonly EagerInitializedSingleton instance = new EagerInitializedSingleton();
-
         private EagerInitializedSingleton() 
         {
             Console.WriteLine("Hello Singleton");
         }
 
+        private static EagerInitializedSingleton instance = new EagerInitializedSingleton();
+
         public static EagerInitializedSingleton getInstance
         {
             get
             {
+                if (instance == null)
+                {
+                    instance = new EagerInitializedSingleton();
+                }
                 return instance;
             } 
         }
+     }
     
 If your singleton class is not using a lot of resources, this is the approach to use. But in most of the scenarios, Singleton classes are created for 
 resources such as File System, Database connections, etc. We should avoid the instantiation until unless client calls the getInstance method. 
 Also, this method doesn’t provide any options for exception handling.
 
-## Static Block Initialization
 
-Static block initialization implementation is similar to eager initialization, except that instance of class is created in the static block that provides 
-option for exception handling.
