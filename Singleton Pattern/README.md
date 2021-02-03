@@ -38,7 +38,7 @@ The following compares Singleton class vs. Static methods:
 3. Thread Safe Singleton using Double-Check Locking
 4. Thread Safe Singleton without using locks and no lazy instantiation
 5. Fully lazy instantiation
-6. Using Reflection to destroy Singleton Pattern
+6. Using .NET 4's Lazy Type
 7. Enum Singleton
 8. Serialization and Singleton
 
@@ -208,4 +208,29 @@ Explanation of the following code:
            }
        }
        
-       
+# Using .NET 4's Lazy Type
+
+Explanation of the following code:
+1. If you're using .NET 4 (or higher) then you can use the System.Lazy<T> type to make the laziness really simple.
+2. All you need to do is pass a delegate to the constructor that calls the Singleton constructor, which is done most easily with a lambda expression.
+3. It also allows you to check whether or not the instance has been created with the IsValueCreated property.
+ 
+       public sealed class LazyInitializedSingleton
+       {
+           private static readonly Lazy<LazyInitializedSingleton> lazy =
+                                   new Lazy<LazyInitializedSingleton>
+                                   (() => new LazyInitializedSingleton());
+
+           public static LazyInitializedSingleton getInstance 
+           { 
+               get 
+               { 
+                   return lazy.Value; 
+               } 
+           }
+
+           private LazyInitializedSingleton()
+           {
+               Console.WriteLine("Hello Singleton");
+           }
+       }
