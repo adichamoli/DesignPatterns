@@ -14,10 +14,10 @@ Design Patterns in the object-oriented world is a reusable solution to common so
 <br/>
 Patterns are used by developers for their specific designs to solve their problems. Pattern choice and usage among various design patterns depends on individual needs and problems. Design patterns are a very powerful tool for software developers. It is important to understand design patterns rather than memorizing their classes, methods, and properties. It is also important to learn how to apply patterns to specific problems to get the desired result. This will be the required continuous practice for using and applying design patterns in day to day software development. First, identify the software design problem then see how to address these problems using design patterns and determine the best-suited design problem to solve the problem.
 
-<br/><br/><br/>
+<br/><br/>
 
 <p align="center">
-  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/design-patterns.png"/>
+  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Design%20Patterns.jpg"/>
 </p>
 
 ### Creational Design Pattern
