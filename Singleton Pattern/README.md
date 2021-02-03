@@ -37,7 +37,7 @@ The following compares Singleton class vs. Static methods:
 2. Thread Safe Singleton
 3. Thread Safe Singleton using Double-Check Locking
 4. Thread Safe Singleton without using locks and no lazy instantiation
-5. Bill Pugh Singleton Implementation
+5. Fully lazy instantiation
 6. Using Reflection to destroy Singleton Pattern
 7. Enum Singleton
 8. Serialization and Singleton
@@ -172,3 +172,40 @@ Explanation of the following code:
                }
            }
        }
+
+# Fully lazy instantiation
+
+Explanation of the following code:
+1. Here, instantiation is triggered by the first reference to the static member of the nested class, that only occurs in Instance.
+2. This means the implementation is fully lazy, but has all the performance benefits of the previous ones.
+3. Note that although nested classes have access to the enclosing class's private members, the reverse is not true, hence the need for instance to be internal here.
+4. That doesn't raise any other problems, though, as the class itself is private.
+5. The code is more complicated in order to make the instantiation lazy.
+
+       public sealed class LazyInitializedSingleton
+       {
+           private LazyInitializedSingleton()
+           {
+                Console.WriteLine("Hello Singleton");
+           }
+
+           public static LazyInitializedSingleton getInstance
+           {
+               get
+               {             
+                   return Nested.instance;
+               }
+           }
+
+           private class Nested
+           {
+               static Nested()
+               {
+                   Console.WriteLine("Hello Singleton Nested");
+               }
+
+               internal static readonly LazyInitializedSingleton instance = new LazyInitializedSingleton();
+           }
+       }
+       
+       
