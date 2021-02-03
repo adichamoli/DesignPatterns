@@ -36,7 +36,7 @@ The following compares Singleton class vs. Static methods:
 1. Eager Initialization
 2. Thread Safe Singleton
 3. Thread Safe Singleton using Double-Check Locking
-4. Thread Safe Singleton
+4. Thread Safe Singleton without using locks and no lazy instantiation
 5. Bill Pugh Singleton Implementation
 6. Using Reflection to destroy Singleton Pattern
 7. Enum Singleton
@@ -142,3 +142,33 @@ In the following code, the thread is locked on a shared object and checks whethe
             }
         }
     }
+
+# Thread Safe Singleton without using locks and no lazy instantiation
+ 
+Explanation of the following code:
+1. The preceding implementation looks like very simple code.
+2. This type of implementation has a static constructor, so it executes only once per Application Domain.
+3. It is not as lazy as the other implementation.
+
+       public sealed class ThreadSafeSingleton
+       {
+           private static ThreadSafeSingleton instance = new ThreadSafeSingleton();
+        
+           static ThreadSafeSingleton()
+           {
+               Console.WriteLine("Hello Singleton Static");
+           }
+
+           private ThreadSafeSingleton()
+           {
+               Console.WriteLine("Hello Singleton");
+           }
+
+           public static ThreadSafeSingleton getInstance
+           {
+               get
+               {
+                   return instance;
+               }
+           }
+       }
