@@ -9,7 +9,7 @@
 <br/><br/>
 
 <p align="center">
-  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Singleton%20Pattern/SingletonPattern.png"/>
+  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Creational%20Design%20Pattern/Singleton%20Pattern/SingletonPattern.png"/>
 </p>
 
 
@@ -25,7 +25,7 @@ The advantages of a Singleton Pattern are:
 * It provides a single point of access to a particular instance, so it is easy to maintain.
 
 <p align="center">
-  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Singleton%20Pattern/singleton-comic.png"/>
+  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Creational%20Design%20Pattern/Singleton%20Pattern/singleton-comic.png"/>
 </p>
 
 # Disadvantages of Singleton Design Pattern
