@@ -112,3 +112,33 @@ Explanation of the following code:
 
 Explanation of the following code:
 In the following code, the thread is locked on a shared object and checks whether an instance has been created or not with double checking.
+
+    public sealed class ThreadSafeSingleton
+    {
+        ThreadSafeSingleton()
+        {
+            Console.WriteLine("Hello Singleton");
+        }
+
+        private static readonly object padlock = new object();
+        private static ThreadSafeSingleton instance = null;
+
+        public static ThreadSafeSingleton getInstance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    lock (padlock)
+                    {
+                        if (instance == null)
+                        {
+                            instance = new ThreadSafeSingleton();
+                        }
+                    }
+                }
+                
+                return instance;
+            }
+        }
+    }
