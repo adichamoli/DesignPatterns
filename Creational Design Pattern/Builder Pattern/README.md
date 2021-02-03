@@ -8,6 +8,22 @@ GOF (Gang of Four) says:
 
 So, it is used to construct a complex object step by step and the final step returns the object. Also, the process of constructing an object should be generic so that it can be used to create different representations of the same object.
 
+The Builder design pattern is one of the GoF design patterns that describe how to solve recurring design problems in object-oriented software.
+
+The Builder design pattern solves problems like:
+
+* How can a class (the same construction process) create different representations of a complex object?
+* How can a class that includes creating a complex object be simplified?
+Creating and assembling the parts of a complex object directly within a class is inflexible. It commits the class to creating a particular representation of the complex object and makes it impossible to change the representation later independently from (without having to change) the class.
+
+The Builder design pattern describes how to solve such problems:
+
+* Encapsulate creating and assembling the parts of a complex object in a separate Builder object.
+* A class delegates object creation to a Builder object instead of creating the objects directly.
+
+A class (the same construction process) can delegate to different Builder objects to create different representations of a complex object.
+
+
 # Advantages of Builder Pattern
 
 * The parameters to the constructor are reduced and are provided in highly readable method calls.
