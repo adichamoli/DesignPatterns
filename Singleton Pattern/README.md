@@ -6,6 +6,23 @@
 * Singleton design pattern is also used in other design patterns like Abstract Factory, Builder, Prototype, Facade etc.
 * Singleton design pattern is used in core java classes also, for example java.lang.Runtime, java.awt.Desktop.
 
+# Advantages of Singleton Design Pattern
+ 
+The advantages of a Singleton Pattern are:
+* Singleton pattern can be implemented interfaces.
+* It can be also inherited from other classes.
+* It can be lazy-loaded.
+* It has Static Initialization.
+* It can be extended into a factory pattern.
+* It helps to hide dependencies.
+* It provides a single point of access to a particular instance, so it is easy to maintain.
+
+# Disadvantages of Singleton Design Pattern
+ 
+The disadvantages of a Singleton Pattern are:
+* Unit testing is more difficult (because it introduces a global state into an application).
+* This pattern reduces the potential for parallelism within a program because to access the singleton in a multi-threaded system, an object must be serialized (by locking).
+
 # Types of Implemenatation
 
 1. Eager Initialization
