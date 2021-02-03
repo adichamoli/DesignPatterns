@@ -21,5 +21,5 @@ Patterns are used by developers for their specific designs to solve their proble
 </p>
 
 ### Creational Design Pattern
-[Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Singleton%20Pattern) | A class of which only a single instance can exist
+[Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Singleton%20Pattern) | A class of which only a single instance can exist
 
