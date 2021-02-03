@@ -17,7 +17,7 @@ Patterns are used by developers for their specific designs to solve their proble
 <br/><br/><br/>
 
 <p align="center">
-  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/design-patterns.png"/>
+  <img src="https://github.com/adichamoli/DesignPatterns/blob/main/Design%20Patterns.jpg"/>
 </p>
 
 ### Creational Design Pattern
