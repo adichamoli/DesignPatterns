@@ -82,28 +82,28 @@ Explanation of the following code:
 4. For example: Since only one thread can be in that part of the code at a time, by the time the second thread enters it, the first thread will have created the instance, so the expression will evaluate to false.
 5. The biggest problem with this is performance; performance suffers since a lock is required every time an instance is requested.
 
-    public sealed class ThreadSafeSingleton
-    {
-        ThreadSafeSingleton()
-        {
-            Console.WriteLine("Hello Singleton");
-        }
+       public sealed class ThreadSafeSingleton
+       {
+           ThreadSafeSingleton()
+           {
+               Console.WriteLine("Hello Singleton");
+           }
 
-        private static readonly object padlock = new object();
-        private static ThreadSafeSingleton instance = null;
+           private static readonly object padlock = new object();
+           private static ThreadSafeSingleton instance = null;
 
-        public static ThreadSafeSingleton getInstance
-        {
-            get
-            {
-                lock(padlock)
-                {
-                    if (instance == null)
-                    {
-                        instance = new ThreadSafeSingleton();
-                    }
-                    return instance;
-                }
-            }
-        }
-    }
+           public static ThreadSafeSingleton getInstance
+           {
+               get
+               {
+                   lock(padlock)
+                   {
+                       if (instance == null)
+                       {
+                           instance = new ThreadSafeSingleton();
+                       }
+                       return instance;
+                   }
+               }
+           }
+       }
