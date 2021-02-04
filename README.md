@@ -1,3 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 # Design Patterns
 
 Design patterns are solutions to software design problems you find again and again in real-world application development. Patterns are about reusable designs and interactions of objects.
@@ -21,5 +24,39 @@ Patterns are used by developers for their specific designs to solve their proble
 </p>
 
 ### Creational Design Pattern
-[Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Singleton%20Pattern) | A class of which only a single instance can exist
+* [Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Singleton%20Pattern) | A class of which only a single instance can exist
+* [Builder Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Builder%20Pattern) | Separates object construction from its representation
+* [Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Factory%20Pattern) | Creates an instance of several derived classes
+* [Abstract Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Abstract%20Factory%20Pattern) | Creates an instance of several families of classes
+* [Prototype Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Prototype%20Pattern) | A fully initialized instance to be copied or cloned
 
+<body>
+<div class="w3-container">
+  <h2>Hoverable Table</h2>
+
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+      <tr class="w3-light-grey">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+</body>
