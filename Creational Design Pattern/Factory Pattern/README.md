@@ -40,3 +40,9 @@ This is a class that implements the Creator class and overrides the factory meth
 1. Factory design pattern provides approach to code for interface rather than implementation.
 2. Factory pattern removes the instantiation of actual implementation classes from client code. Factory pattern makes our code more robust, less coupled and easy to extend. For example, we can easily change PC class implementation because client program is unaware of this.
 3. Factory pattern provides abstraction between implementation and client classes through inheritance.
+
+# Factory Design Pattern Disdvantages
+
+1. Because every application object that intends to use the services offered by the class hierarchy needs to implement the class selection criteria, it results in a high degree of coupling between an application object and the service provider class hierarchy.
+2. Whenever the class selection criteria change, every application object that uses the class hierarchy must undergo a corresponding change.
+3. Because class selection criteria needs to take all the factors that could affect the selection process into account, the implementation of an applicationobject could contain inelegant conditional statements.
