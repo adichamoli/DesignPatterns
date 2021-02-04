@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://github.com/adichamoli/DesignPatterns/blob/main/style.css">
 
 # Design Patterns
 
@@ -23,28 +23,8 @@ Patterns are used by developers for their specific designs to solve their proble
 </p>
 
 ### Creational Design Pattern
-* [Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Singleton%20Pattern) | A class of which only a single instance can exist
-* [Builder Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Builder%20Pattern) | Separates object construction from its representation
-* [Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Factory%20Pattern) | Creates an instance of several derived classes
-* [Abstract Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Abstract%20Factory%20Pattern) | Creates an instance of several families of classes
-* [Prototype Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Prototype%20Pattern) | A fully initialized instance to be copied or cloned
-
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Points</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dom</td>
-            <td>6000</td>
-        </tr>
-        <tr class="active-row">
-            <td>Melissa</td>
-            <td>5150</td>
-        </tr>
-        <!-- and so on... -->
-    </tbody>
-</table>
+* [Singleton Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Singleton%20Pattern) - A class of which only a single instance can exist
+* [Builder Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Builder%20Pattern) - Separates object construction from its representation
+* [Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Factory%20Pattern) - Creates an instance of several derived classes
+* [Abstract Factory Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Abstract%20Factory%20Pattern) - Creates an instance of several families of classes
+* [Prototype Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Creational%20Design%20Pattern/Prototype%20Pattern) - A fully initialized instance to be copied or cloned
