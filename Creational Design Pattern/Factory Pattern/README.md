@@ -34,3 +34,9 @@ This is a class that implements the Creator class and overrides the factory meth
 2. Parent class allows later instantiation to subclasses means the creation of an object is done when it is required.
 3. The process of objects created is required to centralize within the application.
 4. A class (creator) will not know what classes it will be required to create.
+
+# Factory Design Pattern Advantages
+
+1. Factory design pattern provides approach to code for interface rather than implementation.
+2. Factory pattern removes the instantiation of actual implementation classes from client code. Factory pattern makes our code more robust, less coupled and easy to extend. For example, we can easily change PC class implementation because client program is unaware of this.
+3. Factory pattern provides abstraction between implementation and client classes through inheritance.
