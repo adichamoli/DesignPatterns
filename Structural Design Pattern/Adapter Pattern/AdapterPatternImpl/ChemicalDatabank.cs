@@ -5,7 +5,6 @@ using System.Text;
 namespace AdapterPatternImpl
 {
     class ChemicalDatabank
-
     {
         public float GetCriticalPoint(string compound, string point)
         {

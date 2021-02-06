@@ -5,7 +5,6 @@ using System.Text;
 namespace AdapterPatternImpl
 {
     class RichCompound : Compound
-
     {
         private ChemicalDatabank _bank;
 

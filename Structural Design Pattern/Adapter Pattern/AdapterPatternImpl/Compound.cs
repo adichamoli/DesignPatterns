@@ -5,7 +5,6 @@ using System.Text;
 namespace AdapterPatternImpl
 {
     class Compound
-
     {
         protected string _chemical;
         protected float _boilingPoint;
