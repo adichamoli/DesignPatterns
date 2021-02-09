@@ -48,3 +48,16 @@ Patterns are used by developers for their specific designs to solve their proble
 * [Strategy Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Behavioral%20Design%20Pattern/Strategy%20Pattern) - Encapsulates an algorithm inside a class
 * [Template Method	Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Behavioral%20Design%20Pattern/Template%20Method%20Pattern) - Defer the exact steps of an algorithm to a subclass
 * [Visitor Pattern](https://github.com/adichamoli/DesignPatterns/tree/main/Behavioral%20Design%20Pattern/Visitor%20Pattern) -	Defines a new operation to a class without change
+
+## Credits
+* https://en.wikipedia.org/wiki/Wikipedia
+* https://www.geeksforgeeks.org/
+* https://www.dofactory.com/
+* https://learning.oreilly.com/
+* https://docs.microsoft.com/
+* https://refactoring.guru/design-patterns/csharp
+* https://www.dotnettricks.com/learn/designpatterns
+* https://www.c-sharpcorner.com/
+* http://java.boot.by/scea5-guide/ch07s03.html
+* https://beetechnical.com/tech-tutorial/state-design-patterns-when-to-use-pros-and-cons/
+* https://www.infoworld.com/article/3204528/how-to-use-the-mediator-design-pattern-in-c.html
